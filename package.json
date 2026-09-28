@@ -1,0 +1,35 @@
+{
+  "name": "cropper-seven-astral",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/restore-project-assets.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/restore-project-assets.mjs",
+    "build": "tsc && vite build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "assets:pack": "node scripts/package-runtime-assets.mjs && node scripts/package-source-assets.mjs",
+    "assets:restore": "node scripts/restore-project-assets.mjs",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:unit": "node --import ./scripts/register-typescript.mjs --test tests/*.test.mjs",
+    "test:runtime": "node scripts/test-runtime.mjs",
+    "verify:visual": "playwright test tests/visual.spec.ts",
+    "inspect:canvas": "node scripts/inspect-threejs-canvas.mjs"
+  },
+  "dependencies": {
+    "lil-gui": "0.21.0",
+    "three": "0.184.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.60.0",
+    "@types/node": "25.9.0",
+    "@types/pngjs": "6.0.5",
+    "@types/three": "0.184.1",
+    "meshoptimizer": "^1.1.1",
+    "pngjs": "7.0.0",
+    "typescript": "6.0.3",
+    "vite": "8.0.13"
+  }
+}

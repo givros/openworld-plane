@@ -1,0 +1,19 @@
+node_modules/
+.npm-cache/
+dist/
+test-results/
+playwright-report/
+*.log
+# Original working assets are preserved losslessly in repository-assets/.
+public/
+artifacts/
+output/
+__pycache__/
+*.pyc
+*.pdb
+*.obj
+*.exe
+*.dll
+.env
+.env.*
+!.env.example

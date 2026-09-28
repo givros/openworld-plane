@@ -1,0 +1,13 @@
+* text=auto
+*.gz -text
+*.gzpart -text
+*.part -text
+*.png -text
+*.jpg -text
+*.bin -text
+*.blend -text
+*.glb -text
+*.mjs text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
